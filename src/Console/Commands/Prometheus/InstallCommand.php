@@ -1,0 +1,18 @@
+<?php
+
+namespace Violetale\Prometheus\Console\Commands\Prometheus;
+
+use Illuminate\Console\Command;
+
+class InstallCommand extends Command
+{
+    protected $signature = 'prometheus:install';
+
+    protected $description = 'Install Prometheus';
+
+    public function handle(): bool
+    {
+        $this->info('Модуль Prometheus успешно установлен');
+        return true;
+    }
+}

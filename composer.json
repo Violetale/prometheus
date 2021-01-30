@@ -1,0 +1,33 @@
+{
+    "name": "violetale/prometheus",
+    "description": "Core for online stores based on Laravel",
+    "require": {
+        "php": "^7.2.5",
+        "laravel/ui": "^2.0",
+        "davejamesmiller/laravel-breadcrumbs": "^5.0",
+        "kalnoy/nestedset": "^5.0",
+        "spatie/laravel-missing-page-redirector": "^2.6",
+        "spatie/laravel-translatable": "^4.3",
+        "cviebrock/eloquent-sluggable": "^7.0",
+        "mews/purifier": "~3.0",
+        "intervention/image": "^2.5",
+        "predis/predis": "^1.1"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "Violetale\\Prometheus\\": "src/",
+            "Violetale\\Prometheus\\Providers\\Database\\Seeds\\": "database/seeds/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Violetale\\Prometheus\\Providers\\PrometheusServiceProvider"
+            ]
+        }
+    }
+}
