@@ -27,7 +27,9 @@
                 <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">
                     <img src="{{ asset('vendor/core/build/img/no-user-image.jpg') }}"
                          class="user-image img-circle elevation-2" alt="Аватар пользователя">
-                    <span class="d-none d-md-inline">{{ Auth::user()->full_name }}</span>
+                    <span class="d-none d-md-inline">
+{{--                        {{ Auth::user()->full_name }}--}}
+                    </span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                     <li class="user-header bg-primary h-auto">
@@ -36,25 +38,27 @@
                                 class="img-circle elevation-2"
                                 alt="Аватар пользователя">
                         <p>
-                            {{ Auth::user()->full_name }}
-                            <small>{{ Auth::user()->roleName() }}</small>
+{{--                            {{ Auth::user()->full_name }}--}}
+                            <small>
+{{--                                {{ Auth::user()->roleName() }}--}}
+                            </small>
                         </p>
                     </li>
                     <li class="user-footer">
-                        <a href="{{ route('admin.profile.index') }}"
-                           class="btn btn-default btn-flat">
-                            Профиль
-                        </a>
-                        <a href="{{ route('admin.logout') }}"
-                           class="btn btn-default btn-flat float-right"
-                           onclick="event.preventDefault();
-                           document.getElementById('logout-form').submit();">
-                            Выйти
-                        </a>
-                        <form id="logout-form" action="{{ route('admin.logout') }}" method="POST"
-                              class="d-none">
-                            @csrf
-                        </form>
+{{--                        <a href="{{ route('admin.profile.index') }}"--}}
+{{--                           class="btn btn-default btn-flat">--}}
+{{--                            Профиль--}}
+{{--                        </a>--}}
+{{--                        <a href="{{ route('admin.logout') }}"--}}
+{{--                           class="btn btn-default btn-flat float-right"--}}
+{{--                           onclick="event.preventDefault();--}}
+{{--                           document.getElementById('logout-form').submit();">--}}
+{{--                            Выйти--}}
+{{--                        </a>--}}
+{{--                        <form id="logout-form" action="{{ route('admin.logout') }}" method="POST"--}}
+{{--                              class="d-none">--}}
+{{--                            @csrf--}}
+{{--                        </form>--}}
                     </li>
                 </ul>
             </li>
@@ -62,19 +66,19 @@
     </nav>
 
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
-        <a href="{{ route('admin.orders.index') }}" class="brand-link">
-            <img src="{{ asset('vendor/core/build/img/AdminLTELogo.png') }}"
-                 alt="Логотип AdminLTE"
-                 class="brand-image img-circle elevation-3"
-                 style="opacity: .8">
-            <span class="brand-text font-weight-light">AdminLTE 3</span>
-        </a>
+{{--        <a href="{{ route('admin.orders.index') }}" class="brand-link">--}}
+{{--            <img src="{{ asset('vendor/core/build/img/AdminLTELogo.png') }}"--}}
+{{--                 alt="Логотип AdminLTE"--}}
+{{--                 class="brand-image img-circle elevation-3"--}}
+{{--                 style="opacity: .8">--}}
+{{--            <span class="brand-text font-weight-light">AdminLTE 3</span>--}}
+{{--        </a>--}}
 
         <div class="sidebar">
             <nav class="mt-2">
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                     data-accordion="false">
-                    @include('core::admin.partials.sidebar')
+{{--                    @include('core::admin.partials.sidebar')--}}
                 </ul>
             </nav>
         </div>
@@ -85,13 +89,13 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-5">
-                        <h1 class="m-0 text-dark">@yield('header')</h1>
+{{--                        <h1 class="m-0 text-dark">@yield('header')</h1>--}}
                     </div>
 
                     <div class="col-sm-7">
-                        @section('breadcrumbs')
-                            @include('core::admin.partials.breadcrumbs', ['breadcrumbs' => Breadcrumbs::generate()])
-                        @show
+{{--                        @section('breadcrumbs')--}}
+{{--                            @include('core::admin.partials.breadcrumbs', ['breadcrumbs' => Breadcrumbs::generate()])--}}
+{{--                        @show--}}
                     </div>
                 </div>
             </div>
