@@ -8,6 +8,8 @@ use Illuminate\Support\ServiceProvider;
 use Voletale\Prometheus\Http\Middleware\CheckStatus;
 use Violetale\Prometheus\Console\Commands\Prometheus\InstallCommand;
 use Violetale\Prometheus\Console\Commands\Prometheus\SeedCommand;
+use Violetale\Prometheus\Providers\AuthServiceProvider;
+use Violetale\Prometheus\Providers\ViewServiceProvider;
 
 class PrometheusServiceProvider extends ServiceProvider
 {
@@ -35,7 +37,7 @@ class PrometheusServiceProvider extends ServiceProvider
 
     private function mergeConfigs()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../../config/core-general.php', 'core-general');
+//        $this->mergeConfigFrom(__DIR__ . '/../../config/prometheus-general.php', 'prometheus-general');
     }
 
     private function loadResources()

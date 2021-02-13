@@ -9,7 +9,7 @@ Route::group(['middleware' => ['web']], function () {
         'namespace' => 'Violetale\Prometheus\Http\Controllers\Admin',
         'as' => 'admin.',
     ], function () {
-    Route::get('/')->name('admin');
+    Route::get('/','LoginController@login')->name('admin');
     });
 
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace Voletale\Prometheus\Providers;
+namespace Violetale\Prometheus\Providers;
 
 use Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
-use Mediabroker\Core\Models\Admin;
+use Violetale\Prometheus\Models\Admin;
 
 class AuthServiceProvider extends ServiceProvider
 {
