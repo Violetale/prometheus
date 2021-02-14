@@ -1,6 +1,6 @@
 <?php
 
-namespace Mediabroker\Core\Models\Setting;
+namespace Violetale\Prometheus\Models\Setting;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -13,7 +13,7 @@ use Illuminate\Notifications\Notifiable;
  * @property string $role
  * @property string $status
  */
-class Admin extends Authenticatable
+class User extends Authenticatable
 {
     use Notifiable, SoftDeletes;
 

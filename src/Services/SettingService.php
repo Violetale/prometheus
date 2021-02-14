@@ -1,13 +1,13 @@
 <?php
 
-namespace Mediabroker\Core\Services;
+namespace Violetale\Prometheus\Services;
 
 use Cache;
 use DB;
-use Mediabroker\Core\Http\Requests\Setting\SettingRequest;
-use Mediabroker\Core\Models\Language;
-use Mediabroker\Core\Models\Setting\Setting;
-use Mediabroker\Core\Models\Setting\Translatable as TranslatableSetting;
+use Violetale\Prometheus\Http\Requests\Setting\SettingRequest;
+use Violetale\Prometheus\Models\Language;
+use Violetale\Prometheus\Models\Setting\Setting;
+use Violetale\Prometheus\Models\Setting\Translatable as TranslatableSetting;
 use Throwable;
 
 class SettingService

@@ -10,6 +10,6 @@ use Mediabroker\Core\Http\Requests\Admin\UpdateRequest;
 use Mediabroker\Core\Models\Admin;
 use Mediabroker\Core\Services\AdminService;
 
-class AdminController extends Controller
+class UserController extends Controller
 {
 }
