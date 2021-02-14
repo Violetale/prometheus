@@ -1,6 +1,6 @@
 <?php
 
-namespace Mediabroker\Core\Http\Controllers;
+namespace Violetale\Prometheus\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;

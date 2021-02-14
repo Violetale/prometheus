@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Mediabroker\Core\Contracts\Attribute;
+namespace Violetale\Prometheus\Contracts\Attribute;
 
-use Mediabroker\Core\Contracts\ResourceInterface;
+use Violetale\Prometheus\Contracts\ResourceInterface;
 
 interface GroupServiceInterface extends ResourceInterface
 {
