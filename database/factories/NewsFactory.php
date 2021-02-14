@@ -4,8 +4,8 @@
 
 use Faker\Generator as Faker;
 use Illuminate\Database\Eloquent\Factory;
-use Mediabroker\Core\Models\Language;
-use Mediabroker\Core\Models\News;
+use Violetale\Prometheus\Models\Language;
+use Violetale\Prometheus\Models\News;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,11 +19,7 @@ use Mediabroker\Core\Models\News;
 */
 
 $factory->define(News::class, function (Faker $faker) {
-    $content = [];
-
-    foreach (Language::activeLocales() as $locale) {
-        $content[$locale] = "<div>{$faker->text}</div>";
-    }
+        $content = "<div>{$faker->text}</div>";
 
     return [
         'name' => $faker->name,
