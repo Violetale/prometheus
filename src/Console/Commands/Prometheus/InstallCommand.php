@@ -12,6 +12,8 @@ class InstallCommand extends Command
 
     public function handle(): bool
     {
+        $this->call('storage:link');
+
         $this->info('Модуль Prometheus успешно установлен');
         return true;
     }
