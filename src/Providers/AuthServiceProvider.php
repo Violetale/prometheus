@@ -4,7 +4,7 @@ namespace Violetale\Prometheus\Providers;
 
 use Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
-use Violetale\Prometheus\Models\Admin;
+use Violetale\Prometheus\Models\User;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -14,7 +14,7 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        Gate::define('super-admin', function (Admin $user) {
+        Gate::define('super-admin', function (User $user) {
             return $user->isSuperAdmin();
         });
     }
